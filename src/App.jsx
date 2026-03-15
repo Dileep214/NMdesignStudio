@@ -267,28 +267,39 @@ function App() {
         <h2 style={{ fontSize: '4rem', fontWeight: '800', marginBottom: '30px', color: '#fff', textShadow: '0 2px 10px rgba(0,31,63,0.1)' }}>Let's Build the Future</h2>
         <p style={{ marginBottom: '40px', color: '#86868B' }}>Ready to transform your space? Get in touch with our expert team.</p>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <form 
+            action="https://formspree.io/f/navinkomarthi@gmail.com"
+            method="POST"
+            style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
+          >
             <input 
+              name="name"
               type="text" 
               placeholder="Your Name" 
+              required
               className="glass"
               style={{ padding: '20px', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.2)', color: 'var(--text-main)', fontSize: '1rem' }} 
             />
             <input 
+              name="email"
               type="email" 
               placeholder="Your Email" 
+              required
               className="glass"
               style={{ padding: '20px', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.2)', color: 'var(--text-main)', fontSize: '1rem' }} 
             />
             <textarea 
+              name="message"
               placeholder="Tell us about your project" 
               rows="5" 
+              required
               className="glass"
               style={{ padding: '20px', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.2)', color: 'var(--text-main)', fontSize: '1rem', resize: 'none' }}
             ></textarea>
             <button type="submit" className="btn-primary" style={{ border: 'none', cursor: 'pointer', justifyContent: 'center', fontSize: '1.1rem' }}>Send Message</button>
           </form>
         </div>
+
       </section>
 
       {/* Footer */}
